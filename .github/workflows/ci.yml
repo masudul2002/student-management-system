@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint:
+    name: Lint & Basic Checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Check JavaScript syntax (node --check)
+        run: node --check app.js
+
+      - name: Validate HTML (html-validate via npx)
+        run: npx --yes html-validate "**/*.html"
+
+      - name: Optional: Basic accessibility check (pa11y via npx)
+        run: npx --yes pa11y index.html || true
