@@ -1,38 +1,38 @@
-# student-management-system
+# 🎓 Student Management System
 
-Simple **Student Management System** built with vanilla HTML, CSS and JavaScript.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/demo-online-brightgreen.svg)](https://masudul2002.github.io/student-management-system/)
+[![Made with](https://img.shields.io/badge/made%20with-HTML%20%7C%20CSS%20%7C%20JS-orange.svg)](#)
 
-## Features
-- Add / Edit / Delete students
-- Search, filter by class, sort by name/roll
-- Import / Export CSV
-- Data saved in `localStorage` (no backend)
-- Responsive layout
+A simple **Student Management System** built using pure **HTML, CSS, and JavaScript** — no backend, fully browser-based.
 
-## How to use
-1. Clone this repo or download the files.
-2. Open `index.html` in your browser.
-3. Use Add Student button to start adding students.
-4. Export CSV to download data, or Import CSV (with headers) to add many students.
+---
 
-## Files
-- `index.html` — main UI
-- `styles.css` — styles
-- `app.js` — app logic
-- `README.md` — this file
-- `.gitignore` — recommended ignores
-- `LICENSE` — MIT license
+## 🚀 Live Demo
+🔗 **[Click here to view the live site](https://masudul2002.github.io/student-management-system/)**
 
-## License
-MIT
+---
 
+## ✨ Features
 
-## Continuous Integration (GitHub Actions)
+- ➕ Add, ✏️ Edit, and ❌ Delete students  
+- 🔍 Search, filter by class, and sort by name/roll  
+- 📤 Export & 📥 Import student data (CSV)  
+- 💾 Data stored in browser `localStorage` (no server needed)  
+- 📱 Fully responsive design  
+- ⚙️ Includes basic CI setup using GitHub Actions
 
-A simple GitHub Actions workflow is included at `.github/workflows/ci.yml` that runs on `push` and `pull_request` to:
+---
 
-- Check JavaScript syntax using `node --check`.
-- Validate HTML files using `html-validate` (via `npx`).
-- Run an optional basic accessibility check using `pa11y` (via `npx`).
+## 🧠 How to Use
 
-To enable CI: push this repo to GitHub (to `main` or `master`) — the workflow will run automatically.
+1. Open `index.html` in your browser — or visit the live demo.  
+2. Click **Add Student**, fill the form, and hit **Save**.  
+3. Use **Search**, **Filter**, and **Sort** to manage your data easily.  
+4. **Export CSV** to download or **Import CSV** to upload bulk data.  
+5. Data automatically saves in your browser.
+
+---
+
+## 🧩 Folder Structure
+
